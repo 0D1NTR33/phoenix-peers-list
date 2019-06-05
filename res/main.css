@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0px;
+}
+
+.disabled {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .alone {
+        margin: auto;
+        min-width: 900px;
+        float: none;
+    }
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+#container {
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#navbar {
+    vertical-align: middle;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 10px;
+    background: #2E5670;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+
+.green {
+    background: #7CB342 !important;
+}
+
+.usual {
+    background: #5f696e !important;
+}
+
+.red {
+    background: #d32f2f !important;
+}
+
+.missed {
+    background: #F57C00 !important;
+}
+
+@keyframes progress {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.progressbar {
+    position: relative;
+    height: 7px;
+    overflow: hidden;
+    background: #e7e7e7;
+    margin-bottom: 10px;
+}
+
+.progressbar:after {
+    content: '';
+    position: absolute;
+    background: #2ca12e;
+    height: 100%;
+    width: 100%;
+    animation: progress 360s linear reverse;
+    animation-iteration-count: infinite;
+    background: -webkit-repeating-linear-gradient(-45deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0) 12px), -webkit-linear-gradient(#2E5670, #5f696e);
+}
+
+.Net {
+    margin-bottom: 5px;
+    vertical-align: middle;
+    color: #039;
+    text-align: center;
+    padding-left: 5px;
+    line-height: 30px;
+    border-bottom: 1.5px solid #6678b1;
+    font-weight: bold
+}
+
+.infoButton {
+    margin-bottom: 5px;
+    vertical-align: middle;
+    background: #7CB342;
+    color: aliceblue;
+    text-align: center;
+    padding-left: 5px;
+    line-height: 30px;
+    float: left;
+    width: 50%;
+}
+
+.infoBar {
+    margin-bottom: 5px;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 5px;
+    height: 30px;
+}
+
+
+/* Animations */
+
+@keyframes spin {
+    from {
+        transform: rotate( 0deg);
+    }
+    to {
+        transform: rotate( 360deg);
+    }
+}
